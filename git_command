@@ -1,3 +1,6 @@
+-- great source for git commands 
+http://rogerdudler.github.io/git-guide/
+
 ## to update your local repository to the newest commit
 $ git pull
 
