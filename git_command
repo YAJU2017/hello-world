@@ -62,7 +62,18 @@ $ git tag -l
 $ git checkout tag
 
 ## to checkout a specific tag and start it as a new branch
+$ git checkout tags -b <branchname>
 
-git checkout tags -b <branchname>
 
+## to see only the commits of a certain author
+$ git log --author = bob
+
+## to see a very compressed log where each commit is one line :
+$ git log --pretty = online 
+
+## tree of all branches:
+$ git log --graph --oneline --decorate --all
+
+## see only which files have changed:
+ $ git log --name-status
 
