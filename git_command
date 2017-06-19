@@ -77,3 +77,7 @@ $ git log --graph --oneline --decorate --all
 ## see only which files have changed:
  $ git log --name-status
 
+
+## to reset your branch to the remote branch(all your local changes are removed)
+
+git stash; git fetch origin; git reset --hard origin/master
