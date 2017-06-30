@@ -1,0 +1,83 @@
+-- great source for git commands 
+http://rogerdudler.github.io/git-guide/
+
+## to update your local repository to the newest commit
+$ git pull
+
+## to merge a branch
+git merge <branch>
+
+
+## add changes in the stagin area 
+ $ git add filename
+ $ git add *
+
+## before merging changes, you can also preview them by using
+$ git diff  <source_branch> <target_branch>
+
+## Commit chages in the local repositry
+ $ git commit -m "Commit message"
+
+## push changes to the remote repository
+ $ git push origin master
+
+## If you have not cloned an existing repository and want to connect your repository to a remote server
+$ git remote add origin <server>
+
+## to view all branches 
+git branch -a
+git branch 
+
+## create a new branch 
+$ git checkout -b feature_x
+
+## switch to a branch
+git checkout branch_name
+
+
+## Delete a remote branch 
+$ git push origin --delete <branch_name>
+$ git push origin :<branch> 
+
+## Delete a local branch 
+ $ git branch -d <branch_name>
+ $ git branch -D <branch_name>  (D for forced deletion)
+
+ Note: The -d option is an alias for --delete, which only deletes the branch if it 
+ has already been fully merged in its upstream branch. You could also use -D, which 
+ is an alias for --delete --force, which deletes the branch "irrespective of its merged 
+ status." [Source: man git-branch]
+
+## tag a release 
+$ git tag 1.0.0 1b2e1d63ff
+
+## to get  log of a repositry
+$ git log 
+
+
+## to list all tag of a repository
+$ git tag -l
+
+## to check out a specific tag
+$ git checkout tag
+
+## to checkout a specific tag and start it as a new branch
+$ git checkout tags -b <branchname>
+
+
+## to see only the commits of a certain author
+$ git log --author = bob
+
+## to see a very compressed log where each commit is one line :
+$ git log --pretty = online 
+
+## tree of all branches:
+$ git log --graph --oneline --decorate --all
+
+## see only which files have changed:
+ $ git log --name-status
+
+
+## to reset your branch to the remote branch(all your local changes are removed)
+
+git stash; git fetch origin; git reset --hard origin/master
