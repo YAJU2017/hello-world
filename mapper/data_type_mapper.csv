@@ -1,0 +1,4 @@
+source_data_type,target_data_type
+varchar,nvarchar
+date,date
+int,long
