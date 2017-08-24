@@ -1,0 +1,4 @@
+column_name,data_type,data_length
+first_name,varchar,100
+last_name,varchar,100
+age,int,25
