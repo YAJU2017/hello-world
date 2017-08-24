@@ -7,7 +7,6 @@ $ git pull
 ## to merge a branch
 git merge <branch>
 
-
 ## add changes in the stagin area 
  $ git add filename
  $ git add *
