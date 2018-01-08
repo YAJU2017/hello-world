@@ -1,0 +1,10 @@
+*   {
+    margin: 0;
+    padding: 0;
+}
+div#logo{
+    float: left;
+}
+div#advertisement{
+    float: right;
+}
